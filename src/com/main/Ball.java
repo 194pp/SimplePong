@@ -6,7 +6,7 @@ public class Ball {
 
     public static final int SIZE = 16;
 
-    private int x, y;
+    private int x, y; // top left corner point of the ball
     private int xVel, yVel; //value either 1 or -1
     private int speed = 5;
 
@@ -64,6 +64,5 @@ public class Ball {
             p2.addPoint();
             reset();
         }
-
     }
 }

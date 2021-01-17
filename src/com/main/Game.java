@@ -6,7 +6,7 @@ import java.awt.image.BufferStrategy;
 public class Game extends Canvas implements Runnable {
 
     public static final int WIDTH = 1000;
-    public static final int HEIGHT = WIDTH * 9/16;
+    public static final int HEIGHT = WIDTH * 9/16; // 1000 * 9/16 = 562.5
 
     public boolean running = false;
     private Thread gameThread;
@@ -36,6 +36,8 @@ public class Game extends Canvas implements Runnable {
         // initialize paddle
         paddle1 = new Paddle(Color.GREEN, true);
         paddle2 = new Paddle(Color.RED, false);
+
+
 
         menu = new MainMenu(this);
     }

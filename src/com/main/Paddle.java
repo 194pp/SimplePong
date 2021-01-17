@@ -66,7 +66,6 @@ public class Paddle {
                 ball.changeXDir();
             }
         } else {
-
             if (ballX + Ball.SIZE >= Game.WIDTH - width && ballY + Ball.SIZE >= y && ballY <= y + height){
                 ball.changeXDir();
             }
